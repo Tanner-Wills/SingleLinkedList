@@ -1,6 +1,11 @@
 import java.util.Iterator;
 
-public class LinkedList {
+public class LinkedList<T> implements Iterable {
+
+    public Iterator<T> iterator(){
+        return new LLIterator();
+    }
+
 
     private class LLIterator implements Iterator<T>{
         private Node<T> curr;
