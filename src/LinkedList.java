@@ -37,9 +37,9 @@ public class LinkedList<T> implements Iterable {
         if (curr == null) {
             return null;
         }
-        curr.next = rRemove(curr.next);
+        curr.SetNext(rRemove(curr.GetNext()));
         if (curr.next != null && curr.data.equals(curr.next.data)) {
-            return curr.next;
+            return curr.GetNext;
         }
         return curr;
     }
