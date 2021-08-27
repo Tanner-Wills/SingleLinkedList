@@ -50,6 +50,7 @@ public class SinglyLinkedList<T> {
             tail = nodeAddBack;
         } else {
             tail.setNext(nodeAddBack);
+            tail = nodeAddBack;
         }
         size += 1;
     }
